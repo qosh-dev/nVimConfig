@@ -6,7 +6,11 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-
+ call plug#begin()
 
 source $HOME/.config/nvim/plugs/general.plug.vim
 source $HOME/.config/nvim/plugs/ts.plug.vim
+
+
+call plug#end()
+
